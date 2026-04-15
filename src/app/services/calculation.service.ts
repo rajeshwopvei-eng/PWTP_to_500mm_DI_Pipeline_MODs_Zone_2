@@ -42,7 +42,8 @@ export class CalculationService {
       velocity,
       headLoss,
       pressureDrop,
-      endPressure
+      endPressure,
+      flowRate
     };
   }
 }

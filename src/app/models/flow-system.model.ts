@@ -14,6 +14,7 @@ export interface PipeCalculationResults {
   headLoss: number;      // m
   pressureDrop: number;   // bar
   endPressure: number;    // bar
+  flowRate: number;      // m3/h
 }
 
 export interface Pump {
@@ -52,6 +53,8 @@ export interface Pipeline {
   results?: PipeCalculationResults;
   points: Point[];
   labelPosition?: Point;
+  fixedFlow?: number;
+  hasArrow?: boolean;
 }
 
 export interface FlowSystem {
